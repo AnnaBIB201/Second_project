@@ -16,20 +16,19 @@ TEST_CASE("TestAlex") {
     int jumpNum = -10;
     float CurrentFrame = 3.96;
     alex.MoveToLeft(CurrentFrame, times);
-    alex.update(time,jumpNum);
+    alex.update(time, jumpNum);
     REQUIRE(alex.x == 5);
-    REQUIRE(CurrentFrame==doctest::Approx(4.01));
+    REQUIRE(CurrentFrame == doctest::Approx(4.01));
     ChangeCadr(CurrentFrame);
-    REQUIRE(CurrentFrame==doctest::Approx(0.01));
+    REQUIRE(CurrentFrame == doctest::Approx(0.01));
 }
 
-TEST_CASE("TestCharacterJump"){
+TEST_CASE("TestCharacterJump") {
     Character gamer("nik.png", 10, 520, 300, 280);
     gamer.jump = true;
-    float times =0;
+    float times = 0;
     int jumpNum = 2;
-    gamer.update(times,jumpNum);
+    gamer.update(times, jumpNum);
     REQUIRE(gamer.y == 518);
     REQUIRE(jumpNum == 1);
-
 }
