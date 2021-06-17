@@ -33,12 +33,3 @@ TEST_CASE("TestCharacterJump"){
     REQUIRE(jumpNum == 1);
 
 }
-
-
-//TEST_CASE("TestBonus") {
-    
-    //float time = 10;
-    //nice.speed=5;
-    //nice.update(time);
-    //REQUIRE(nice.y == 100);
-//}
