@@ -82,6 +82,7 @@ int main() {
 				window.close();
 			}
 		}
+		///Блок заимствованный с сайта https://kychka-pc.ru/
 		if (Niko.Score >= 0) {
 			if ((Keyboard::isKeyPressed(Keyboard::A)) && ((LENGTH - Niko.x) <= LENGTH)) {
 				Niko.MoveToLeft(Moment,times);
@@ -106,6 +107,7 @@ int main() {
 				ChangeCadr(Moment);
 			}
 		}
+		///Конец заимствования
 		Niko.update(times,jumpNum);
 		for ( auto iter = obstacles.begin(); iter != obstacles.end(); iter++)
 		{
