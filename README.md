@@ -1,1 +1,1 @@
-# Second_project
+[![Build Status](https://travis-ci.org/krsch/cpp-starter-project.svg?branch=master)](https://travis-ci.org/krsch/cpp-starter-project)
